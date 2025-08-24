@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HolyFamily - Privacy Policy</title>
+    <title>HolyFamily - Privacy Policy & Data Deletion</title>
     <style>
         * {
             margin: 0;
@@ -46,6 +46,7 @@
             padding: 30px;
             border-radius: 0 0 10px 10px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            margin-bottom: 20px;
         }
         
         h2 {
@@ -93,6 +94,7 @@
             justify-content: center;
             gap: 15px;
             margin-top: 30px;
+            flex-wrap: wrap;
         }
         
         .button {
@@ -104,6 +106,8 @@
             border-radius: 5px;
             font-weight: 600;
             transition: background-color 0.3s;
+            border: none;
+            cursor: pointer;
         }
         
         .button:hover {
@@ -120,35 +124,49 @@
             background-color: #e6f3fb;
         }
         
-        .github-info {
-            background-color: #f9f9f9;
-            border-left: 4px solid #168EEA;
+        .deletion-instructions {
+            background-color: #fff8e6;
+            border-left: 4px solid #ffc53d;
             padding: 20px;
             margin: 30px 0;
             border-radius: 4px;
         }
         
-        .github-info h3 {
-            color: #168EEA;
+        .deletion-instructions h3 {
+            color: #d48806;
             margin-top: 0;
         }
         
-        .instructions {
-            background-color: #f5f8fa;
-            padding: 20px;
+        .tab-container {
+            display: flex;
+            margin-bottom: 20px;
+            background: white;
             border-radius: 8px;
-            margin: 20px 0;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
         
-        .instructions ol {
-            margin-left: 25px;
+        .tab {
+            padding: 15px 20px;
+            background: #f0f0f0;
+            cursor: pointer;
+            flex: 1;
+            text-align: center;
+            transition: background-color 0.3s;
         }
         
-        code {
-            background-color: #f1f1f1;
-            padding: 2px 6px;
-            border-radius: 4px;
-            font-family: monospace;
+        .tab.active {
+            background: #168EEA;
+            color: white;
+            font-weight: 600;
+        }
+        
+        .tab-content {
+            display: none;
+        }
+        
+        .tab-content.active {
+            display: block;
         }
         
         @media (max-width: 768px) {
@@ -167,130 +185,203 @@
             .button-container {
                 flex-direction: column;
             }
+            
+            .tab-container {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="instructions">
-        <h2>How to Host This Privacy Policy on GitHub</h2>
-        <ol>
-            <li>Create a GitHub account at <a href="https://github.com/" target="_blank">github.com</a> if you don't have one</li>
-            <li>Create a new repository named <code>holyfamily-privacy-policy</code></li>
-            <li>Copy this entire HTML code</li>
-            <li>In your repository, create a new file named <code>index.html</code></li>
-            <li>Paste the code and commit the file</li>
-            <li>Go to Settings → Pages → Select "main" branch → Save</li>
-            <li>Your privacy policy will be available at: <code>https://yourusername.github.io/holyfamily-privacy-policy</code></li>
-        </ol>
-    </div>
-
     <header>
-        <h1>Privacy Policy</h1>
-        <p class="last-updated">Last Updated: August 24, 2025</p>
+        <h1>HolyFamily</h1>
+        <p class="last-updated">Privacy Policy & Data Deletion Instructions</p>
     </header>
     
-    <div class="content">
-        <p>At HolyFamily, we take your privacy seriously. This Privacy Policy describes how we collect, use, and share your personal information when you use our application to schedule and manage social media posts.</p>
-        
-        <h2>1. Information We Collect</h2>
-        <p>When you use HolyFamily, we may collect the following types of information:</p>
-        
-        <h3>a. Information You Provide</h3>
-        <ul>
-            <li>Account information (name, email address, profile picture)</li>
-            <li>Social media account credentials (with your permission)</li>
-            <li>Content you create or schedule through our app</li>
-            <li>Communication preferences</li>
-        </ul>
-        
-        <h3>b. Information We Collect Automatically</h3>
-        <ul>
-            <li>Usage data (how you interact with our application)</li>
-            <li>Device information (device type, operating system, browser type)</li>
-            <li>Log data (IP address, access times, app features accessed)</li>
-        </ul>
-        
-        <h3>c. Information from Social Media Platforms</h3>
-        <p>When you connect your social media accounts, we may receive:</p>
-        <ul>
-            <li>Profile information from the platforms</li>
-            <li>Analytics and engagement data about your posts</li>
-            <li>Access to post on your behalf (with your explicit permission)</li>
-        </ul>
-        
-        <h2>2. How We Use Your Information</h2>
-        <p>We use the information we collect to:</p>
-        <ul>
-            <li>Provide, maintain, and improve our services</li>
-            <li>Schedule and publish content to your connected social media accounts</li>
-            <li>Communicate with you about your account and our services</li>
-            <li>Personalize your experience with our application</li>
-            <li>Analyze usage trends and improve our application</li>
-            <li>Detect, prevent, and address technical issues or fraudulent activities</li>
-        </ul>
-        
-        <h2>3. How We Share Your Information</h2>
-        <p>We do not sell your personal information to third parties. We may share your information in the following circumstances:</p>
-        <ul>
-            <li>With social media platforms to post content on your behalf</li>
-            <li>With service providers who assist us in operating our application</li>
-            <li>If required by law or to protect our rights</li>
-            <li>In connection with a business transfer, such as a merger or acquisition</li>
-        </ul>
-        
-        <h2>4. Data Storage and Security</h2>
-        <p>We implement appropriate security measures to protect your personal information. However, no method of transmission over the Internet or electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your information, we cannot guarantee its absolute security.</p>
-        
-        <h2>5. Your Rights and Choices</h2>
-        <p>You have the right to:</p>
-        <ul>
-            <li>Access and update your personal information</li>
-            <li>Delete your account and associated data</li>
-            <li>Disconnect your social media accounts at any time</li>
-            <li>Opt-out of marketing communications</li>
-        </ul>
-        
-        <h2>6. Third-Party Services</h2>
-        <p>Our application integrates with various social media platforms. Each platform has its own privacy policy, and we encourage you to review them:</p>
-        <ul>
-            <li>Facebook: <a href="https://www.facebook.com/about/privacy/">https://www.facebook.com/about/privacy/</a></li>
-            <li>Instagram: <a href="https://help.instagram.com/519522125107875">https://help.instagram.com/519522125107875</a></li>
-            <li>Twitter: <a href="https://twitter.com/en/privacy">https://twitter.com/en/privacy</a></li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/legal/privacy-policy">https://www.linkedin.com/legal/privacy-policy</a></li>
-            <li>YouTube: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
-            <li>TikTok: <a href="https://www.tiktok.com/legal/privacy-policy">https://www.tiktok.com/legal/privacy-policy</a></li>
-            <li>Pinterest: <a href="https://policy.pinterest.com/en/privacy-policy">https://policy.pinterest.com/en/privacy-policy</a></li>
-        </ul>
-        
-        <h2>7. Children's Privacy</h2>
-        <p>Our application is not intended for use by children under the age of 13. We do not knowingly collect personal information from children under 13. If we become aware that we have collected personal information from a child under 13, we will take steps to delete such information.</p>
-        
-        <h2>8. Changes to This Policy</h2>
-        <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date.</p>
-        
-        <h2>9. Contact Us</h2>
-        <div class="contact-info">
-            <p>If you have any questions about this Privacy Policy, please contact us:</p>
-            <p><strong>HolyFamily</strong><br>
-            Dar es Salaam, Tanzania<br>
-            Email: <a href="mailto:holyfamilypefct@gmail.com">holyfamilypefct@gmail.com</a></p>
+    <div class="tab-container">
+        <div class="tab active" onclick="showTab('privacy')">Privacy Policy</div>
+        <div class="tab" onclick="showTab('deletion')">Data Deletion</div>
+    </div>
+    
+    <!-- Privacy Policy Tab -->
+    <div id="privacy-tab" class="tab-content active">
+        <div class="content">
+            <p>At HolyFamily, we take your privacy seriously. This Privacy Policy describes how we collect, use, and share your personal information when you use our application to schedule and manage social media posts.</p>
+            
+            <h2>1. Information We Collect</h2>
+            <p>When you use HolyFamily, we may collect the following types of information:</p>
+            
+            <h3>a. Information You Provide</h3>
+            <ul>
+                <li>Account information (name, email address, profile picture)</li>
+                <li>Social media account credentials (with your permission)</li>
+                <li>Content you create or schedule through our app</li>
+                <li>Communication preferences</li>
+            </ul>
+            
+            <h3>b. Information We Collect Automatically</h3>
+            <ul>
+                <li>Usage data (how you interact with our application)</li>
+                <li>Device information (device type, operating system, browser type)</li>
+                <li>Log data (IP address, access times, app features accessed)</li>
+            </ul>
+            
+            <h3>c. Information from Social Media Platforms</h3>
+            <p>When you connect your social media accounts, we may receive:</p>
+            <ul>
+                <li>Profile information from the platforms</li>
+                <li>Analytics and engagement data about your posts</li>
+                <li>Access to post on your behalf (with your explicit permission)</li>
+            </ul>
+            
+            <h2>2. How We Use Your Information</h2>
+            <p>We use the information we collect to:</p>
+            <ul>
+                <li>Provide, maintain, and improve our services</li>
+                <li>Schedule and publish content to your connected social media accounts</li>
+                <li>Communicate with you about your account and our services</li>
+                <li>Personalize your experience with our application</li>
+                <li>Analyze usage trends and improve our application</li>
+                <li>Detect, prevent, and address technical issues or fraudulent activities</li>
+            </ul>
+            
+            <h2>3. How We Share Your Information</h2>
+            <p>We do not sell your personal information to third parties. We may share your information in the following circumstances:</p>
+            <ul>
+                <li>With social media platforms to post content on your behalf</li>
+                <li>With service providers who assist us in operating our application</li>
+                <li>If required by law or to protect our rights</li>
+                <li>In connection with a business transfer, such as a merger or acquisition</li>
+            </ul>
+            
+            <h2>4. Data Storage and Security</h2>
+            <p>We implement appropriate security measures to protect your personal information. However, no method of transmission over the Internet or electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your information, we cannot guarantee its absolute security.</p>
+            
+            <h2>5. Your Rights and Choices</h2>
+            <p>You have the right to:</p>
+            <ul>
+                <li>Access and update your personal information</li>
+                <li>Delete your account and associated data</li>
+                <li>Disconnect your social media accounts at any time</li>
+                <li>Opt-out of marketing communications</li>
+            </ul>
+            
+            <h2>6. Third-Party Services</h2>
+            <p>Our application integrates with various social media platforms. Each platform has its own privacy policy, and we encourage you to review them:</p>
+            <ul>
+                <li>Facebook: <a href="https://www.facebook.com/about/privacy/">https://www.facebook.com/about/privacy/</a></li>
+                <li>Instagram: <a href="https://help.instagram.com/519522125107875">https://help.instagram.com/519522125107875</a></li>
+                <li>Twitter: <a href="https://twitter.com/en/privacy">https://twitter.com/en/privacy</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/legal/privacy-policy">https://www.linkedin.com/legal/privacy-policy</a></li>
+                <li>YouTube: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+                <li>TikTok: <a href="https://www.tiktok.com/legal/privacy-policy">https://www.tiktok.com/legal/privacy-policy</a></li>
+                <li>Pinterest: <a href="https://policy.pinterest.com/en/privacy-policy">https://policy.pinterest.com/en/privacy-policy</a></li>
+            </ul>
+            
+            <h2>7. Children's Privacy</h2>
+            <p>Our application is not intended for use by children under the age of 13. We do not knowingly collect personal information from children under 13. If we become aware that we have collected personal information from a child under 13, we will take steps to delete such information.</p>
+            
+            <h2>8. Changes to This Policy</h2>
+            <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date.</p>
+            
+            <h2>9. Contact Us</h2>
+            <div class="contact-info">
+                <p>If you have any questions about this Privacy Policy, please contact us:</p>
+                <p><strong>HolyFamily</strong><br>
+                Dar es Salaam, Tanzania<br>
+                Email: <a href="mailto:holyfamilypefct@gmail.com">holyfamilypefct@gmail.com</a></p>
+            </div>
         </div>
     </div>
     
-    <div class="github-info">
-        <h3>Your GitHub Pages URL</h3>
-        <p>Once you've followed the instructions above, your privacy policy will be available at:</p>
-        <p><code>https://yourusername.github.io/holyfamily-privacy-policy</code></p>
-        <p>Replace <code>yourusername</code> with your actual GitHub username.</p>
+    <!-- Data Deletion Instructions Tab -->
+    <div id="deletion-tab" class="tab-content">
+        <div class="content">
+            <h2>Data Deletion Instructions</h2>
+            <p>At HolyFamily, we respect your right to privacy and provide you with control over your personal data. This page explains how you can request deletion of your data from our systems.</p>
+            
+            <div class="deletion-instructions">
+                <h3>How to Request Data Deletion</h3>
+                <p>To request deletion of your data from HolyFamily, please follow these steps:</p>
+                <ol>
+                    <li>Send an email to <a href="mailto:holyfamilypefct@gmail.com">holyfamilypefct@gmail.com</a> with the subject "Data Deletion Request"</li>
+                    <li>Include your registered email address and/or username in the email</li>
+                    <li>Specify whether you want to delete your entire account or specific data</li>
+                    <li>We will process your request within 30 days and send you a confirmation once completed</li>
+                </ol>
+            </div>
+            
+            <h3>What Data We Delete</h3>
+            <p>When you request data deletion, we will remove:</p>
+            <ul>
+                <li>Your personal account information</li>
+                <li>Your connected social media account credentials</li>
+                <li>All scheduled posts and content</li>
+                <li>Any analytics data associated with your account</li>
+                <li>All other personal data stored in our systems</li>
+            </ul>
+            
+            <h3>Important Notes</h3>
+            <ul>
+                <li>Data deletion is permanent and cannot be undone</li>
+                <li>We may retain certain information as required by law or for legitimate business purposes</li>
+                <li>Deleting your data from HolyFamily does not affect content already published to social media platforms</li>
+                <li>You will need to separately remove app permissions from your social media accounts</li>
+            </ul>
+            
+            <h3>Removing HolyFamily Access from Social Media Accounts</h3>
+            <p>To completely remove HolyFamily's access to your social media accounts, you should also revoke access in each platform's settings:</p>
+            
+            <h4>Facebook/Instagram</h4>
+            <ol>
+                <li>Go to your Facebook Settings & Privacy</li>
+                <li>Click "Settings"</li>
+                <li>Select "Apps and Websites"</li>
+                <li>Find HolyFamily in the list and click "Remove"</li>
+            </ol>
+            
+            <h4>Twitter</h4>
+            <ol>
+                <li>Go to your Twitter Settings and Privacy</li>
+                <li>Select "Apps and sessions"</li>
+                <li>Click "Connected apps"</li>
+                <li>Find HolyFamily and click "Revoke access"</li>
+            </ol>
+            
+            <h4>Other Platforms</h4>
+            <p>For other social media platforms, please check their respective settings sections for connected apps or third-party access.</p>
+            
+            <div class="contact-info">
+                <p>If you have any questions about data deletion, please contact us at <a href="mailto:holyfamilypefct@gmail.com">holyfamilypefct@gmail.com</a></p>
+            </div>
+        </div>
     </div>
 
     <div class="button-container">
-        <a href="javascript:window.print()" class="button">Print Policy</a>
-        <a href="mailto:holyfamilypefct@gmail.com?subject=Privacy Policy Questions" class="button button-outline">Contact Us</a>
+        <a href="javascript:window.print()" class="button">Print This Page</a>
+        <a href="mailto:holyfamilypefct@gmail.com?subject=Data Deletion Request" class="button button-outline">Request Data Deletion</a>
     </div>
     
     <footer>
         <p>© 2025 HolyFamily. All rights reserved.</p>
     </footer>
+
+    <script>
+        function showTab(tabName) {
+            // Hide all tabs
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // Show selected tab
+            document.getElementById(tabName + '-tab').classList.add('active');
+            
+            // Update tab buttons
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            event.currentTarget.classList.add('active');
+        }
+    </script>
 </body>
 </html>
